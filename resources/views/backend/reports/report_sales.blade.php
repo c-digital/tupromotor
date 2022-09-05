@@ -80,7 +80,7 @@
 
                 @if(!request()->imprimir || request()->excel)
                     <div class="aiz-pagination mt-4">
-                        {{ $orders->links() }}
+                        {{ $orders->appends($_GET)->links() }}
                     </div>
                 @endif
             </div>

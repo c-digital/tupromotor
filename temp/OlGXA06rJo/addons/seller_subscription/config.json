@@ -1,0 +1,50 @@
+{
+   "name":"Seller Subscription System",
+   "unique_identifier":"seller_subscription",
+   "version":"1.5",
+   "minimum_item_version":"5.5.2",
+   "addon_banner":"seller_subscription.jpg",
+   "directory":[
+      {
+         "name":[
+            "resources/views/seller_packages",
+            "resources/views/seller_packages/frontend"
+         ]
+      }
+   ],
+   "sql_file":"",
+   "files":[
+      {
+           "root_directory":"addons/seller_subscription/views/seller_packages/frontend/seller_packages_list.blade.php",
+           "update_directory":"resources/views/seller_packages/frontend/seller_packages_list.blade.php"
+      },
+      {
+          "root_directory":"addons/seller_subscription/views/seller_packages/create.blade.php",
+          "update_directory":"resources/views/seller_packages/create.blade.php"
+      },
+      {
+          "root_directory":"addons/seller_subscription/views/seller_packages/edit.blade.php",
+          "update_directory":"resources/views/seller_packages/edit.blade.php"
+      },
+      {
+          "root_directory":"addons/seller_subscription/views/seller_packages/index.blade.php",
+          "update_directory":"resources/views/seller_packages/index.blade.php"
+      },
+      {
+          "root_directory":"addons/seller_subscription/controllers/SellerPackageController.php",
+          "update_directory":"app/Http/Controllers/SellerPackageController.php"
+      },
+      {
+          "root_directory":"addons/seller_subscription/controllers/SellerPackagePaymentController.php",
+          "update_directory":"app/Http/Controllers/SellerPackagePaymentController.php"
+      },
+      {
+          "root_directory"    : "addons/seller_subscription/routes/seller_package.php",
+          "update_directory"  : "routes/seller_package.php"
+      },
+      {
+         "root_directory":"addons/seller_subscription/assets/seller_subscription.jpg",
+         "update_directory":"public/seller_subscription.jpg"
+      }
+   ]
+}

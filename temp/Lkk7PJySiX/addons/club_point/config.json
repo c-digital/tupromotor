@@ -1,0 +1,69 @@
+{
+    "name" : "club_point",
+
+    "unique_identifier" : "club_point",
+
+    "version" : "1.3",
+
+    "minimum_item_version" : "4.0",
+
+    "addon_banner" : "club_points.png",
+
+    "directory" :
+    [
+        {
+          "name" : ["resources/views/club_points", "resources/views/club_points/frontend"]
+        }
+    ],
+
+    "sql_file"  : "",
+
+    "files"     :
+    [
+
+        {
+            "root_directory"    : "addons/club_point/views/club_points/club_point_details.blade.php",
+            "update_directory"  : "resources/views/club_points/club_point_details.blade.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/views/club_points/config.blade.php",
+            "update_directory"  : "resources/views/club_points/config.blade.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/views/club_points/index.blade.php",
+            "update_directory"  : "resources/views/club_points/index.blade.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/views/club_points/product_point_edit.blade.php",
+            "update_directory"  : "resources/views/club_points/product_point_edit.blade.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/views/club_points/set_point.blade.php",
+            "update_directory"  : "resources/views/club_points/set_point.blade.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/views/club_points/frontend/index.blade.php",
+            "update_directory"  : "resources/views/club_points/frontend/index.blade.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/controllers/ClubPointController.php",
+            "update_directory"  : "app/Http/Controllers/ClubPointController.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/models/ClubPoint.php",
+            "update_directory"  : "app/ClubPoint.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/models/ClubPointDetail.php",
+            "update_directory"  : "app/ClubPointDetail.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/routes/club_points.php",
+            "update_directory"  : "routes/club_points.php"
+        },
+        {
+            "root_directory"    : "addons/club_point/assets/club_points.png",
+            "update_directory"  : "public/club_points.png"
+        }
+    ]
+}

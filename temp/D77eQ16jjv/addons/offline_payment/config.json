@@ -1,0 +1,77 @@
+{
+    "name" : "Offline Payment",
+
+    "unique_identifier" : "offline_payment",
+
+    "version" : "1.3",
+
+    "minimum_item_version" : "3.6",
+
+    "addon_banner" : "offline_banner.jpg",
+
+    "directory" :
+    [
+        {
+          "name" : [
+              "resources/views/manual_payment_methods",
+              "resources/views/manual_payment_methods/frontend",
+              "public/uploads/customer_package_payment_reciept",
+              "public/uploads/seller_package_payment_reciept"
+          ]
+        }
+    ],
+
+    "sql_file"  : "",
+
+    "files"     :
+    [
+        {
+            "root_directory"    : "addons/offline_payment/views/manual_payment_methods/frontend/offline_customer_package_purchase_modal.blade.php",
+            "update_directory"  : "resources/views/manual_payment_methods/frontend/offline_customer_package_purchase_modal.blade.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/views/manual_payment_methods/frontend/offline_seller_package_purchase_modal.blade.php",
+            "update_directory"  : "resources/views/manual_payment_methods/frontend/offline_seller_package_purchase_modal.blade.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/views/manual_payment_methods/create.blade.php",
+            "update_directory"  : "resources/views/manual_payment_methods/create.blade.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/views/manual_payment_methods/customer_package_payment_request.blade.php",
+            "update_directory"  : "resources/views/manual_payment_methods/customer_package_payment_request.blade.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/views/manual_payment_methods/edit.blade.php",
+            "update_directory"  : "resources/views/manual_payment_methods/edit.blade.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/views/manual_payment_methods/index.blade.php",
+            "update_directory"  : "resources/views/manual_payment_methods/index.blade.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/views/manual_payment_methods/seller_package_payment_request.blade.php",
+            "update_directory"  : "resources/views/manual_payment_methods/seller_package_payment_request.blade.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/views/manual_payment_methods/wallet_request.blade.php",
+            "update_directory"  : "resources/views/manual_payment_methods/wallet_request.blade.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/controllers/ManualPaymentMethodController.php",
+            "update_directory"  : "app/Http/Controllers/ManualPaymentMethodController.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/models/ManualPaymentMethod.php",
+            "update_directory"  : "app/ManualPaymentMethod.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/routes/offline_payment.php",
+            "update_directory"  : "routes/offline_payment.php"
+        },
+        {
+            "root_directory"    : "addons/offline_payment/assets/offline_banner.jpg",
+            "update_directory"  : "public/offline_banner.jpg"
+        }
+    ]
+}
